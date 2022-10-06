@@ -33,15 +33,15 @@
         />
       </a>
 
-      <ul>
-        <li><a class="active" href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
+      <ul id="toggleNav">
+        <li><a class="active" href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#">Menú</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
 
-    <header class="header">
+    <header class="header" id="inicio">
       <div class="header__text">
         <h1 class="no-margin">Sabores como en Perú</h1>
         <p class="no-margin">Ven y disfruta nuestras mejores preparaciones</p>
@@ -49,7 +49,7 @@
       </div>
     </header>
 
-    <section class="nosotros">
+    <section class="nosotros" id="nosotros">
       <div class="nosotros__titulo">
         <h2>Nosotros</h2>
       </div>
@@ -111,7 +111,7 @@
       </div>
     </section>
 
-    <section class="contacto">
+    <section class="contacto" id="contacto">
       <div class="contacto__titulo">
         <h2>Contacto</h2>
       </div>
@@ -168,6 +168,10 @@
           counter = 1;
         }
       }, 5000);
+
+      document.getElementById("toggleNav").onclick = function () {
+        document.getElementById("check").checked = false;
+      };
     </script>
   </body>
 </html>

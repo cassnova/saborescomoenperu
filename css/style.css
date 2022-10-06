@@ -79,6 +79,7 @@ a:hover {
 #check {
   display: none;
 }
+
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
