@@ -38,15 +38,18 @@ img {
 
 nav {
   background: white;
-  height: 11rem;
+  height: 15rem;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo {
-  width: 15rem;
-  margin-left: 10px;
+  width: 20rem;
+  margin-left: 40px;
 }
 nav ul {
   float: right;
@@ -82,6 +85,14 @@ a:hover {
 }
 
 @media (max-width: 858px) {
+  .logo{
+    width: 13rem;
+    margin-left: 20px;
+  }
+  nav{
+    height: 11rem;
+    flex-direction: row-reverse;
+  }
   .checkbtn {
     display: block;
   }
@@ -200,7 +211,7 @@ a:hover {
 }
 
 .nosotros__galeria {
-  width: 100%;
+  width: 90%;
   height: 380px;
   display: flex;
   flex-direction: column;
@@ -208,6 +219,8 @@ a:hover {
   align-items: center;
   margin-top: 10px;
 }
+
+
 .slider {
   width: 90%;
   height: 100vh;
@@ -216,7 +229,6 @@ a:hover {
 }
 .slides {
   width: 500%;
-  /* height: 100vh; */
   display: flex;
 }
 .slides input {
@@ -229,15 +241,15 @@ a:hover {
 .slide img {
   width: 100%;
 }
-
+*/
 /* css para navegacion manual*/
 
 .navigation-manual {
   position: absolute;
   width: 90%;
-  /* margin-top: -20px; */
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .manual-btn {
@@ -270,6 +282,7 @@ a:hover {
 }
 
 /* CSS NAVEGACION AUTOMATICA  */
+
 .navigation-auto {
   position: absolute;
   display: flex;
@@ -314,10 +327,16 @@ a:hover {
 }
 @media (min-width: 1280px){
   .nosotros__galeria{
-    height: 500px;
+    width: 100vw;
+    height: 700px;
   }
-  .navigation-manual{
-    margin-top: -220px;
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -376,12 +395,12 @@ a:hover {
 
 @media (min-width: 1280px){
   .contacto{
-    margin-top: 250px;
-    height: 100vh;
+    margin-top: 400px;
+    height: 1500px;
   }
   .contacto__mapa iframe{
     width: 80%;
-    height: 45rem;
+    height: 100%;
   }
 }
 
