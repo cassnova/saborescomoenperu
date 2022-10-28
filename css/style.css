@@ -154,7 +154,7 @@ h1 {
 .header::before {
   content: "";
   opacity: 0.4;
-  background-image: url(../img/salmon.jpg);
+  background-image: url(../img/salmon2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
