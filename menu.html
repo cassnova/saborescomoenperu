@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,70 +17,84 @@
       src="https://kit.fontawesome.com/2a32169d6d.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-  
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <a href="./index.html">
+        <img
+          src="./img/logosabores.jpeg"
+          alt="Logo Sabores como en Perú"
+          class="logo"
+        />
+      </a>
+
+      <ul id="toggleNav">
+        <li><a class="active" href="./index.html">Inicio</a></li>
+      </ul>
+    </nav>
+
+    <main class="menu-container">
+      <h2>Menú Sabores como en Perú</h2>
+      <img src="./img/menu1.jpeg" alt="" />
+      <img src="./img/menu2.jpeg" alt="" />
+      <img src="./img/menu3.jpeg" alt="" />
+      <img src="./img/menu4.jpeg" alt="" />
+      <img src="./img/menu5.jpeg" alt="" />
+      <img src="./img/menu6.jpeg" alt="" />
+      <img src="./img/menu7.jpeg" alt="" />
+      <img src="./img/menu8.jpeg" alt="" />
+      <img src="./img/menu9.jpeg" alt="" />
+      <img src="./img/menu10.jpeg" alt="" />
+      <img src="./img/menu11.jpeg" alt="" />
+      <img src="./img/menu12.jpeg" alt="" />
+      <img src="./img/menu13.jpeg" alt="" />
+      <img src="./img/menu14.jpeg" alt="" />
+      <!-- <iframe src="./CARTA SABORES COMO EN PERÚpdf.pdf" class="menu"></iframe> -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
         <a href="./index.html">
-          <img
-            src="./img/logosabores.jpeg"
-            alt="Logo Sabores como en Perú"
-            class="logo"
-          />
+          <img src="./img/logosabores.jpeg" alt="Logo Sabores como en Perú" />
         </a>
-  
-        <ul id="toggleNav">
-          <li><a class="active" href="./index.html">Inicio</a></li>
-        </ul>
-      </nav>
 
-      <main class="menu-container">
-        <h2>Menú Sabores como en Perú</h2>
-        <iframe src="./CARTA SABORES COMO EN PERÚpdf.pdf" class="menu"></iframe>
-      </main>
+        <a href="https://www.instagram.com/saborescomoenperu/" target="_blank">
+          <i class="fa-brands fa-instagram fa-3x"></i>
+        </a>
+      </div>
+      <div>
+        <p>Todos los derechos reservados.</p>
+      </div>
+      <div>
+        <p>
+          © 2022 Desarrollo Web por
+          <a
+            href="https://www.linkedin.com/in/daniel-rojas-casanova/"
+            target="_blank"
+            >Daniel Rojas</a
+          >
+        </p>
+      </div>
+    </footer>
 
-      <footer class="footer">
-        <div class="footer__container">
-            <a href="./index.html">
-                <img src="./img/logosabores.jpeg" alt="Logo Sabores como en Perú"/>
-            </a>
-          
-          <a href="https://www.instagram.com/saborescomoenperu/" target="_blank">
-            <i class="fa-brands fa-instagram fa-3x"></i>
-          </a>
-        </div>
-        <div>
-          <p>Todos los derechos reservados.</p>
-        </div>
-        <div>
-          <p>
-            © 2022 Desarrollo Web por
-            <a
-              href="https://www.linkedin.com/in/daniel-rojas-casanova/"
-              target="_blank"
-              >Daniel Rojas</a
-            >
-          </p>
-        </div>
-      </footer>
+    <script type="text/javascript">
+      let counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 5) {
+          counter = 1;
+        }
+      }, 5000);
 
-      <script type="text/javascript">
-        let counter = 1;
-        setInterval(function () {
-          document.getElementById("radio" + counter).checked = true;
-          counter++;
-          if (counter > 5) {
-            counter = 1;
-          }
-        }, 5000);
-  
-        document.getElementById("toggleNav").onclick = function () {
-          document.getElementById("check").checked = false;
-        };
-      </script>
-</body>
+      document.getElementById("toggleNav").onclick = function () {
+        document.getElementById("check").checked = false;
+      };
+    </script>
+  </body>
 </html>

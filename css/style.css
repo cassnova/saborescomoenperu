@@ -486,16 +486,23 @@ h1 {
 
 /*   MENU   */
 .menu-container {
-  width: 100%;
-  height: 100vh;
-  margin-top: 9rem;
+  /* width: 100%;
+  height: 8100px; */
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
 }
-.menu {
-  width: 100%;
-  height: 100vh;
+.menu-container img {
+  width: 95%;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .menu-container {
+    height: 16000px;
+    margin-top: 450px;
+  }
 }
