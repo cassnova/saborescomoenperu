@@ -501,8 +501,19 @@ h1 {
   display: inline-block;
 }
 @media (min-width: 768px) {
-  .menu-container {
-    height: 16000px;
-    margin-top: 450px;
+  .menu-container h2 {
+    font-size: 4rem;
+    margin: 20px 0 20px 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu-container h2 {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1550px) {
+  .menu-container img {
+    width: 60%;
   }
 }
